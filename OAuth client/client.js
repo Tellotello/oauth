@@ -8,7 +8,19 @@ app.use(cors());
 
 app.get("/", (req, res) => {
   res.send(
-    "Hello World! Funcionando bien. Ir a /login para iniciar sesión. Username: user1 Password: password1 o Username: A01721735 Password: Tello123! o Username: A444 Password: Tello123"
+    `
+    Hello World! Funcionando bien.<br>
+    Ir a /login para iniciar sesión.<br>
+    <br>
+    Username: user1 Password: password1<br>
+    Username: A01721735 Password: Tello123!<br>
+    Username: A444 Password: Tello123<br>
+    <br>
+    Para el proyecto desplegué el backend y el client en 2 App Services de Azure.<br>
+    El backend se puede encontrar en <a href="https://oauthback.azurewebsites.net">https://oauthback.azurewebsites.net</a>, y el client en <a href="https://oauthtello.azurewebsites.net">https://oauthtello.azurewebsites.net</a>.<br>
+    <br>
+    El código se puede ver en el repo <a href="https://github.com/Tellotello/oauth/tree/main">https://github.com/Tellotello/oauth/tree/main</a>, folder de actividad oauth para el back, y oauth client para el client.
+    `
   );
 });
 
